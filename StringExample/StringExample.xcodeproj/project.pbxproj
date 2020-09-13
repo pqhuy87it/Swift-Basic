@@ -21,6 +21,8 @@
 		11AB046725054752008DFE3A /* Superscript.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AB046625054752008DFE3A /* Superscript.storyboard */; };
 		11AB046A250547C8008DFE3A /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AB0468250547C8008DFE3A /* TableViewCell.swift */; };
 		11AB046B250547C8008DFE3A /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AB0469250547C8008DFE3A /* TableViewCell.xib */; };
+		11B60076250E0B0A0094AF46 /* JSONFromStringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B60075250E0B0A0094AF46 /* JSONFromStringViewController.swift */; };
+		11B60079250E0C070094AF46 /* JsonFromString.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11B60078250E0C070094AF46 /* JsonFromString.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		11AB046625054752008DFE3A /* Superscript.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Superscript.storyboard; sourceTree = "<group>"; };
 		11AB0468250547C8008DFE3A /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		11AB0469250547C8008DFE3A /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		11B60075250E0B0A0094AF46 /* JSONFromStringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFromStringViewController.swift; sourceTree = "<group>"; };
+		11B60078250E0C070094AF46 /* JsonFromString.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JsonFromString.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 		11AB046025054618008DFE3A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				11B60074250E0AC20094AF46 /* Json String */,
 				11AB046125054708008DFE3A /* Superscript Styling */,
 			);
 			path = Modules;
@@ -182,6 +187,31 @@
 			isa = PBXGroup;
 			children = (
 				11AB046625054752008DFE3A /* Superscript.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11B60074250E0AC20094AF46 /* Json String */ = {
+			isa = PBXGroup;
+			children = (
+				11B6007A250E0C560094AF46 /* Views */,
+				11B60077250E0BF20094AF46 /* Controllers */,
+			);
+			path = "Json String";
+			sourceTree = "<group>";
+		};
+		11B60077250E0BF20094AF46 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11B60075250E0B0A0094AF46 /* JSONFromStringViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11B6007A250E0C560094AF46 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11B60078250E0C070094AF46 /* JsonFromString.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +323,7 @@
 				11AB0438250544FC008DFE3A /* LaunchScreen.storyboard in Resources */,
 				11AB046B250547C8008DFE3A /* TableViewCell.xib in Resources */,
 				11AB046725054752008DFE3A /* Superscript.storyboard in Resources */,
+				11B60079250E0C070094AF46 /* JsonFromString.storyboard in Resources */,
 				11AB0435250544FC008DFE3A /* Assets.xcassets in Resources */,
 				11AB0433250544F9008DFE3A /* Main.storyboard in Resources */,
 			);
@@ -324,6 +355,7 @@
 				11AB042C250544F9008DFE3A /* AppDelegate.swift in Sources */,
 				11AB046325054731008DFE3A /* SuperscriptViewController.swift in Sources */,
 				11AB042E250544F9008DFE3A /* SceneDelegate.swift in Sources */,
+				11B60076250E0B0A0094AF46 /* JSONFromStringViewController.swift in Sources */,
 				11AB046A250547C8008DFE3A /* TableViewCell.swift in Sources */,
 				11AB045E25054612008DFE3A /* UITableView+Extension.swift in Sources */,
 			);

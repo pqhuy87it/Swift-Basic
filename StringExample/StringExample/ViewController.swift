@@ -27,7 +27,8 @@ class ViewController: UIViewController {
     }
     
     func setupData() {
-        items = ["Superscript Styling"]
+        items = ["Superscript Styling",
+				 "Json String"]
     }
 }
 
@@ -58,11 +59,16 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
-            case 0:
+		case 0:
             let storyBoard = UIStoryboard(name: "Superscript", bundle: nil)
             if let superScriptVC = storyBoard.instantiateViewController(withIdentifier: "SuperscriptViewController") as? SuperscriptViewController {
                 self.navigationController?.pushViewController(superScriptVC, animated: true)
             }
+		case 1:
+			let storyBoard = UIStoryboard(name: "JsonFromString", bundle: nil)
+			if let jsonFromStringVC = storyBoard.instantiateViewController(identifier: "JSONFromStringViewController") as? JSONFromStringViewController {
+				self.navigationController?.pushViewController(jsonFromStringVC, animated: true)
+			}
             default:
             break
         }
